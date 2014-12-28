@@ -1,0 +1,21 @@
+<div class="col-md-4">
+  <h1>Users</h1>
+  <hr>
+  <ul>
+   {{#each user in model}}
+   <li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+  {{#link-to "users.create" class="create-btn"}}
+    <h4>
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+      Add User
+    </h4>
+  {{/link-to}}
+   <hr>
+     <div> Number of Users: {{usersCount}} </div>
+</div>
+
+<div class="col-md-8">
+  {{outlet}}
+</div>

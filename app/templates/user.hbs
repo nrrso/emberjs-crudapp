@@ -1,0 +1,19 @@
+<div class="user-profile">
+  <img {{bind-attr src="avatarUrl" class=":pull-right"}} alt="User's avatar" />
+  <h2>{{name}}</h2>
+  <p><span>{{email}}</span></p>
+  <p>{{bio}}</p>
+  <p><span>Created {{formatDate creationDate}}</span></p>
+  <button {{action "edit"}}>Edit</button>
+  <button {{action "delete"}}>Delete</button>
+  <hr>
+
+   {{#if deleteMode}}
+    <div class="confirm-box">
+      <h1>Really?</h1>
+      <button {{action "confirmDelete"}}>yes</button>
+      <button {{action "cancelDelete"}}>no</button>
+    </div>
+  {{/if}}
+</div>
+{{outlet}}

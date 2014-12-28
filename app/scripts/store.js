@@ -1,0 +1,1 @@
+EmberCrud.ApplicationAdapter = DS.FixtureAdapter;
