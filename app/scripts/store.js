@@ -1,1 +1,1 @@
-EmberCrud.ApplicationAdapter = DS.FixtureAdapter;
+EmberCrud.ApplicationAdapter = DS.LSAdapter;
