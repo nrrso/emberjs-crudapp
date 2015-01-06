@@ -5467,7 +5467,6 @@ button.close {
   overflow: hidden;
 }
 .modal {
-  display: none;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -5478,7 +5477,8 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
-.modal.fade .modal-dialog {
+.modal.hidden {
+  opacity: 0;
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
@@ -5487,7 +5487,8 @@ button.close {
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
-.modal.in .modal-dialog {
+.modal.show {
+  opacity: 1;
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
