@@ -1,4 +1,6 @@
-var EmberCrud = window.EmberCrud = Ember.Application.create();
+var EmberCrud = window.EmberCrud = Ember.Application.create({
+  LOG_TRANSITIONS: true
+});
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
